@@ -2,16 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 2rem 4rem;
-  background-color: #f9f9f9;
+  background-color: #e8e8e8;
   color: #333;
   border-top: 5px solid #4a90d9;
   border-left: 5px solid #4a90d9;
   border-right: 5px solid #4a90d9;
-  
-}
-
-body {
-  background-color: #e8e8e8;
+  border-bottom: 5px solid #4a90d9;
 }
 
 img {
@@ -82,4 +78,28 @@ footer a:hover {
 
 .btn-contato:hover {
   background-color: #357abd;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .btn-contato {
+    margin-top: 10px;
+  }
 }
